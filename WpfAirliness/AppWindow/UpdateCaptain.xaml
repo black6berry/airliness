@@ -1,0 +1,93 @@
+﻿<Window x:Class="WpfAirliness.AppWindow.UpdateCaptain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAirliness.AppWindow"
+        mc:Ignorable="d"
+        Title="Изменить данные пользователя" 
+        Height="450" 
+        Width="450"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        >
+    
+    <Grid  Background="LightBlue">
+        <StackPanel VerticalAlignment="Center">
+            <StackPanel Width="350">
+                <DockPanel>
+                    <Label Content="Имя" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbFirstameEdit"
+                        Margin="10" 
+                        ToolTip="Введите имя"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Фамилия" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbLastnameEdit" 
+                        Margin="10" 
+                        ToolTip="Введите фамилию"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Отчество" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPatronymicEdit"
+                        Margin="10" 
+                        ToolTip="Введите отчество"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Номер паспорта" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPasportNumberEdit" 
+                        Margin="10" 
+                        ToolTip="Введите номер паспорта"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel >
+                    <Label Content="Адрес" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbAddressEdit" 
+                        Margin="10" 
+                        ToolTip="Введите адрес"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Номер телефона" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPhoneNumberEdit" 
+                        Margin="10" 
+                        ToolTip="Введите номер телефона"
+                        Text="+7(XXX)-XXX-XX-XX"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Опыт пилота(ч.)" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPilotExperienceEdit"
+                        Margin="10" 
+                        ToolTip="Введите опыт пилота"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <Button 
+                    Margin="0 10 0 0"
+                    Name="BtnUpdateCaptain" 
+                    Content="Сохранить" 
+                    Width="100" 
+                    Height="25"
+                    Click="BtnUpdateCaptain_Click"
+                    />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,85 @@
+﻿<Window x:Class="WpfAirliness.AppWindow.AddPlane"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAirliness.AppWindow"
+        mc:Ignorable="d"
+        Title="Добавить самолет" 
+        Height="450" Width="450"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="LightBlue">
+        <StackPanel VerticalAlignment="Center">
+            <StackPanel Width="350">
+                <DockPanel>
+                    <Label Content="Бортовой номер" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbBortNumber"
+                        Margin="10" 
+                        ToolTip="Введите бортовой номер"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Модель" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbModel" 
+                        Margin="10" 
+                        ToolTip="Введите модель самоолета"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Дата создания" VerticalAlignment="Center"/>
+                    <DatePicker
+                        Name="ClndrCreationDate"
+                        IsTodayHighlighted="True"
+                        FirstDayOfWeek="Monday"
+                        SelectedDate="{Binding ClndrCreationDate, StringFormat='yyyy-MM-dd'}"
+                        Margin="10" 
+                        ToolTip="Введите дату создания"
+                        Width="210"
+                        HorizontalAlignment="Right"
+                       />
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Годы использования" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbYearsOfUse" 
+                        Margin="10" 
+                        ToolTip="Введите кол-во лет эксплутации"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel >
+                    <Label Content="Вылет" VerticalAlignment="Center" Margin="0 0 79 0 "/>
+                    <ComboBox 
+                        Name="CmbReadFly"
+                        Margin="10" 
+                        ToolTip="Введите готов ли самолет к вылету"
+                        Width="70"
+                        HorizontalAlignment="Left">
+                    </ComboBox>
+                </DockPanel>
+                <DockPanel >
+                    <Label Content="Вместимость" VerticalAlignment="Center" Margin="0 0 44 0 "/>
+                    <TextBox 
+                        Name="TxbMaxPassenger" 
+                        Margin="10" 
+                        ToolTip="Введите максимальное кол-во мест в самолете"
+                        Width="120"
+                        HorizontalAlignment="Left"/>
+                </DockPanel>
+                <Button 
+                    Margin="0 10 0 0"
+                    Name="BtnAddPlane" 
+                    Content="Сохранить" 
+                    Width="100" 
+                    Height="25"
+                    Click="BtnAddPlane_Click"
+                    />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

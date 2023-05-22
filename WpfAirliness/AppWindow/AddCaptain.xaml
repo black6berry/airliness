@@ -1,0 +1,105 @@
+﻿<Window x:Class="WPFAirelines.AppWindow.AddCaptain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAirelines.AppWindow"
+        mc:Ignorable="d"
+        Title="Добавить пользователя" 
+        Height="450" 
+        Width="450"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        >
+    <Grid Background="LightBlue">
+        <StackPanel VerticalAlignment="Center">
+            <StackPanel Width="350">
+                <DockPanel>
+                    <Label Content="Имя" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbFirstame"
+                        Margin="10" 
+                        ToolTip="Введите имя"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Фамилия" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbLastname" 
+                        Margin="10" 
+                        ToolTip="Введите фамилию"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Отчество" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPatronymic"
+                        Margin="10" 
+                        ToolTip="Введите отчество"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Данные паспорта" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPasportNumber" 
+                        Margin="10" 
+                        ToolTip="Введите номер и серию паспорта"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel >
+                    <Label Content="Адрес" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbAddress" 
+                        Margin="10" 
+                        ToolTip="Введите адрес"
+                        Width="250"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <DockPanel>
+                    <Label Content="Номер телефона" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPhoneNumber" 
+                        Margin="10" 
+                        ToolTip="Введите номер телефона"
+                        Text="+7(XXX)-XXX-XX-XX"
+                        GotFocus="TxbPhoneNumber_GotFocus"
+                        LostFocus="TxbPhoneNumber_LostFocus"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                
+                <ComboBox 
+                    Name="CmbRole" 
+                    IsEditable="True" 
+                    Text="Роль пользователя" 
+                    Margin="10" 
+                    ToolTip="Выберите роль пользователя"
+                    SelectionChanged="CmbRole_SelectionChanged"
+                    Width="210"
+                    HorizontalAlignment="Right"
+                    />
+                <DockPanel Name="InputPilot">
+                    <Label Content="Опыт пилота(ч.)" VerticalAlignment="Center"/>
+                    <TextBox 
+                        Name="TxbPilotExpirience"
+                        Margin="10" 
+                        ToolTip="Введите опыт пилота"
+                        Width="210"
+                        HorizontalAlignment="Right"/>
+                </DockPanel>
+                <Button 
+                    Margin="0 10 0 0"
+                    Name="BtnAddCaptain" 
+                    Content="Сохранить" 
+                    Width="100" 
+                    Height="25"
+                    Click="BtnAddCaptain_Click"
+                    />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

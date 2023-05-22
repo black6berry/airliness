@@ -1,0 +1,98 @@
+﻿<Page x:Class="WpfAirliness.AppPages.Admin.PageAdminMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfAirliness.AppPages.Admin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="820"
+      Title="PageAdminMain">
+
+    <Grid Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="126*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel 
+            Grid.Column="0" 
+            Grid.ColumnSpan="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <Image Source="/Assets/logo.png" 
+                   MinWidth="90" MinHeight="50">
+                
+            </Image>
+        </StackPanel>
+
+        <DockPanel 
+            Grid.Row="0" 
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            VerticalAlignment="Center">
+            <Button 
+                Content="Выход"
+                Name="BtnExit"
+                Click="BtnExit_Click"
+                Margin="5 0 10 0"
+                Width="55"
+                Height="25"
+                HorizontalAlignment="Right"/>
+        </DockPanel>
+
+
+        <StackPanel 
+            Grid.Row="1"
+            Grid.Column="0"
+            Orientation="Vertical"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            Margin="0 10 0 0 "
+            >
+            <Button Content="Командиры" 
+                    Name="BtnCaptain"
+                    Click="BtnCaptain_Click"
+                    MinWidth="85"
+                    MinHeight="25"
+                    Margin="5 0 5 0"
+                    />
+            <Button Content="Маршруты" 
+                    Name="BtnRoute"
+                    Margin="5 10 5 0"
+                    Click="BtnRoute_Click"
+                    MinWidth="85"
+                    MinHeight="25"
+                    />
+            <Button Content="Продажи" 
+                    Name="BtnSoldTickets"
+                    Margin="5 10 5 0"
+                    Click="BtnSoldTickets_Click"
+                    MinWidth="85"
+                    MinHeight="25"
+                    />
+            <Button Content="Самолеты" 
+                    Name="BtnAirplane"
+                    Margin="5 10 5 0"
+                    Click="BtnAirplane_Click"
+                    MinWidth="85"
+                    MinHeight="25"
+                    />
+
+        </StackPanel>
+
+
+        <Frame 
+            Grid.Row="0" 
+            Grid.Column="0"
+            Grid.RowSpan="3"
+            Grid.ColumnSpan="3"
+            Name="FrmContentPage"
+            NavigationUIVisibility="Hidden"/>
+
+    </Grid>
+</Page>
