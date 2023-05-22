@@ -102,10 +102,10 @@ JSON объекты передаются через Body->row если вы ис
 
 Добавление билета
 
-![Video](video/AddTIcket2_video.mov) 
+![Video](/video/AddTIcket2_video.mov) 
 - Если видео не отображается, то оно лежит по этому пути /video/AddTIcket2
 
 Создание, редактирование, удаление записей
 
-![Video](video/Crud-captain2_video.MOV)
+![Video](/video/Crud-captain2_video.MOV)
 - Если видео не отображается, то оно лежит по этому пути /video/Crud-captain2
