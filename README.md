@@ -5,6 +5,7 @@ Api доступно по адресу - https://private-public.site/Rodnoy/airl
 
 Ссылка на API Postman - https://elements.getpostman.com/redirect?entityId=20457530-e2bf0a0b-8c01-4a27-a2df-4c08a05bf6fa&entityType=collection
 
+Вы можете импортировать файл Airliness.postman_collection.json в свой Postman, файл содержит коллекцию запросов, осле импорта они должны у вас отобразиться. 
 
 Доступные методы:
 
@@ -94,17 +95,17 @@ JSON объекты передаются через Body->row если вы ис
 
 # Экраны программы
 
-Авторизация: <p align="center"><img src="WpfAirliness/img/Auth.jpg"/></p>
-Главная страница Администратора <p align="center"><img src="WpfAirliness/img/WindowAdminMain.jpg"/></p>
+Авторизация: <p align="center"><img src="img/Auth.jpg"/></p>
+Главная страница Администратора <p align="center"><img src="img/WindowAdminMain.jpg"/></p>
 
 # Видео с работой программы
 
 Добавление билета
 
-![Video](WpfAirliness/video/AddTIcket2_video.mov) 
-- Если видео не отображается, то оно лежит по этому пути WpfAirliness/video/AddTIcket2
+![Video](video/AddTIcket2_video.mov) 
+- Если видео не отображается, то оно лежит по этому пути /video/AddTIcket2
 
 Создание, редактирование, удаление записей
 
-![Video](WpfAirliness/video/Crud-captain2_video.MOV)
-- Если видео не отображается, то оно лежит по этому пути WpfAirliness/video/Crud-captain2
+![Video](video/Crud-captain2_video.MOV)
+- Если видео не отображается, то оно лежит по этому пути /video/Crud-captain2
