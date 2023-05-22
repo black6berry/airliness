@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "eb26913c-1181-499e-899f-46b521ce6c40",
+		"name": "Airlines",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20457530",
+		"_collection_link": "https://mike-workpace.postman.co/workspace/My-Workspace~2b77b88b-5ca7-48ad-81ed-7b10e88c8e80/collection/20457530-eb26913c-1181-499e-899f-46b521ce6c40?action=share&creator=20457530&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "create-user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Firstname\": \"Jhon\",\r\n    \"Lastname\": \"Doe\",\r\n    \"Patronymic\": \"Smoth\",\r\n    \"PasportNumber\": \"212333\",\r\n    \"Address\": \"this\",\r\n    \"PhoneNumber\": \"8800553535\",\r\n    \"Role\": \"Пилот\",\r\n    \"PilotExperience\": \"555\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://private-public.site/Rodnoy/airlines-api/create-user",
+							"protocol": "https",
+							"host": [
+								"private-public",
+								"site"
+							],
+							"path": [
+								"Rodnoy",
+								"airlines-api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://private-public.site/Rodnoy/airlines-api/delete-user/111",
+							"protocol": "https",
+							"host": [
+								"private-public",
+								"site"
+							],
+							"path": [
+								"Rodnoy",
+								"airlines-api",
+								"delete-user",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "del-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":\"84\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://private-public.site/Rodnoy/airlines-api/del-user",
+							"protocol": "https",
+							"host": [
+								"private-public",
+								"site"
+							],
+							"path": [
+								"Rodnoy",
+								"airlines-api",
+								"del-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": \"99\",\r\n    \"Firstname\":\"No name\",\r\n    \"Lastname\": \"No name\",\r\n    \"Patronymic\": \"No name\",\r\n    \"PasportNumber\": \"000000\",\r\n    \"Address\": \"No name\",\r\n    \"PhoneNumber\": \"00000000000\",\r\n    \"Role\": \"Пилот\",\r\n    \"PilotExperience\": \"none\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://private-public.site/Rodnoy/airlines-api/update-user",
+							"protocol": "https",
+							"host": [
+								"private-public",
+								"site"
+							],
+							"path": [
+								"Rodnoy",
+								"airlines-api",
+								"update-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plain",
+			"item": [
+				{
+					"name": "create-plain",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"BortNumber\": \"test5\",\r\n    \"Model\": \"test5\",\r\n    \"CreationDate\": \"test5\",\r\n    \"YearsOfUse\": \"test5\",\r\n    \"ReadFly\": \"0\",\r\n    \"MaxPassenger\": \"test5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://private-public.site/Rodnoy/airlines-api/create-plane",
+							"protocol": "https",
+							"host": [
+								"private-public",
+								"site"
+							],
+							"path": [
+								"Rodnoy",
+								"airlines-api",
+								"create-plane"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Route",
+			"item": [
+				{
+					"name": "Add Ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Firstname\": \"No name\",\r\n    \"Lastname\": \"No name\",\r\n    \"Patronymic\": \"No name\",\r\n    \"PasportNumber\": \"000000\",\r\n    \"DepartureAirport\": \"Москва (Внуково)\",\r\n    \"ArrivalAirport\": \"Сочи (Адлер)\",\r\n    \"TimeTripMinute\": \"230\",\r\n    \"Price\": \"29985.00\",\r\n    \"DateTimeDeparture\": \"1679124268\",\r\n    \"BortNumber\": \"B7572001\",\r\n    \"SeatNumber\": \"A01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://private-public.site/Rodnoy/airlines-api/add-ticket",
+							"protocol": "https",
+							"host": [
+								"private-public",
+								"site"
+							],
+							"path": [
+								"Rodnoy",
+								"airlines-api",
+								"add-ticket"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TicketsSold",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://private-public.site/Rodnoy/airlines-api/ticketsSold",
+					"protocol": "https",
+					"host": [
+						"private-public",
+						"site"
+					],
+					"path": [
+						"Rodnoy",
+						"airlines-api",
+						"ticketsSold"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Plane",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://private-public.site/Rodnoy/airlines-api/plane/1",
+					"protocol": "https",
+					"host": [
+						"private-public",
+						"site"
+					],
+					"path": [
+						"Rodnoy",
+						"airlines-api",
+						"plane",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Captains",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://private-public.site/Rodnoy/airlines-api/captains",
+					"protocol": "https",
+					"host": [
+						"private-public",
+						"site"
+					],
+					"path": [
+						"Rodnoy",
+						"airlines-api",
+						"captains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign-up",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://private-public.site/Rodnoy/airlines-api/sign-in?Login=8&Password=8",
+					"protocol": "https",
+					"host": [
+						"private-public",
+						"site"
+					],
+					"path": [
+						"Rodnoy",
+						"airlines-api",
+						"sign-in"
+					],
+					"query": [
+						{
+							"key": "Login",
+							"value": "8"
+						},
+						{
+							"key": "Password",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Routes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://private-public.site/Rodnoy/airlines-api/routes",
+					"protocol": "https",
+					"host": [
+						"private-public",
+						"site"
+					],
+					"path": [
+						"Rodnoy",
+						"airlines-api",
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Planes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://private-public.site/Rodnoy/airlines-api/planes",
+					"protocol": "https",
+					"host": [
+						"private-public",
+						"site"
+					],
+					"path": [
+						"Rodnoy",
+						"airlines-api",
+						"planes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
